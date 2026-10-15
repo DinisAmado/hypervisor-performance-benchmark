@@ -9,7 +9,6 @@ CSV_FILE = 'resultados_benchmark.csv'
 NUM_RUNS = 5  # Scientific standard to calculate mean and standard deviation
 
 def run_cpu_test():
-    """Runs sysbench for CPU and returns events per second."""
     command = ["sysbench", "cpu", "--cpu-max-prime=20000", "--threads=2", "--time=10", "run"]
     res = subprocess.run(command, capture_output=True, text=True)
     if res.returncode != 0:
@@ -18,7 +17,6 @@ def run_cpu_test():
     return float(match.group(1)) if match else None
 
 def run_ram_test():
-    """Runs sysbench for RAM memory and returns throughput in MiB/s."""
     command = [
         "sysbench", "memory", 
         "--memory-block-size=1K", 
@@ -34,7 +32,6 @@ def run_ram_test():
     return float(match.group(1)) if match else None
 
 def run_disk_test():
-    """Runs fio for random disk writes and returns IOPS."""
     command = [
         "fio", "--name=teste_io", "--ioengine=libaio", "--iodepth=1",
         "--rw=randwrite", "--bs=4k", "--direct=1", "--size=256M",
