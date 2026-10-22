@@ -19,7 +19,7 @@ def run_cpu_test():
 def run_ram_test():
     command = [
         "sysbench", "memory", 
-        "--memory-block-size=1K", 
+        "--memory-block-size=1M", 
         "--memory-total-size=10G", 
         "--threads=2", 
         "run"
