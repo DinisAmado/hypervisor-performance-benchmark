@@ -1,6 +1,0 @@
-Timestamp,Node_ID,Environment,Hypervisor,Threads,vCPUs,RAM_Total_MiB,Iteration,CPU_Events_s,RAM_MiB_s,Disk_IOPS,Net_Mbit_s
-2026-10-24 15:29:16,PC_Membro2,Tipo 2,Oracle VirtualBox,2,2,1642,1,2699.93,53447.62,1682.1,38.95
-2026-10-24 15:29:50,PC_Membro2,Tipo 2,Oracle VirtualBox,2,2,1642,2,2819.09,53370.88,1457.11,106.75
-2026-10-24 15:30:24,PC_Membro2,Tipo 2,Oracle VirtualBox,2,2,1642,3,2801.85,52581.51,2042.3,81.31
-2026-10-24 15:30:58,PC_Membro2,Tipo 2,Oracle VirtualBox,2,2,1642,4,2794.86,54339.99,2636.24,84.08
-2026-10-24 15:31:32,PC_Membro2,Tipo 2,Oracle VirtualBox,2,2,1642,5,2800.25,53655.4,2663.33,120.1
