@@ -1,0 +1,6 @@
+Timestamp,Node_ID,Environment,Hypervisor,Threads,vCPUs,RAM_Total_MiB,Iteration,CPU_Events_s,RAM_MiB_s,Disk_IOPS,Net_Mbit_s
+2026-10-24 14:55:56,PC_Membro2,Tipo 1,Gestor Hyper-V,2,2,1577,1,2281.97,43825.67,643.35,205.62
+2026-10-24 14:56:30,PC_Membro2,Tipo 1,Gestor Hyper-V,2,2,1577,2,2322.74,40626.67,39.3,210.46
+2026-10-24 14:57:03,PC_Membro2,Tipo 1,Gestor Hyper-V,2,2,1577,3,2293.61,57104.15,10.87,193.4
+2026-10-24 14:57:37,PC_Membro2,Tipo 1,Gestor Hyper-V,2,2,1577,4,2251.77,49197.23,5614.54,207.72
+2026-10-24 14:58:11,PC_Membro2,Tipo 1,Gestor Hyper-V,2,2,1577,5,2163.72,54901.54,10432.16,206.25

@@ -1,0 +1,6 @@
+Timestamp,Node_ID,Environment,Hypervisor,Threads,vCPUs,RAM_Total_MiB,Iteration,CPU_Events_s,RAM_MiB_s,Disk_IOPS,Net_Mbit_s
+2026-10-24 17:25:39,PC_Membro1,Baseline,Baseline,4,4,15620,1,2922.97,72570.53,796058.0,397.44
+2026-10-24 17:26:13,PC_Membro1,Baseline,Baseline,4,4,15620,2,2922.02,73225.41,807748.6,370.59
+2026-10-24 17:26:46,PC_Membro1,Baseline,Baseline,4,4,15620,3,2922.44,76700.8,783360.8,395.43
+2026-10-24 17:27:20,PC_Membro1,Baseline,Baseline,4,4,15620,4,2923.19,71040.75,819430.6,391.7
+2026-10-24 17:27:54,PC_Membro1,Baseline,Baseline,4,4,15620,5,2922.5,73442.96,785582.9,381.67
