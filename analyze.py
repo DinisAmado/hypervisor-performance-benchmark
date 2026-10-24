@@ -1,7 +1,7 @@
 import sys
 import pandas as pd
 
-CSV = sys.argv[1] if len(sys.argv) > 1 else "resultados_benchmark.csv"
+CSV = sys.argv[1] if len(sys.argv) > 1 else "resultados/resultados_benchmark.csv"
 METRICAS = {"CPU_Events_s": "CPU (ev/s)", "RAM_MiB_s": "RAM (MiB/s)",
             "Disk_IOPS": "Disco (IOPS)", "Net_Mbit_s": "Rede (Mbit/s)"}
 
@@ -36,7 +36,7 @@ res["Overhead_pct"] = res.apply(overhead, axis=1)
 ordem = {"Baseline": 0, "Tipo 1": 1, "Tipo 2": 2}
 res = res.sort_values(["Node_ID", "Metrica", "Ambiente"], key=lambda c: c.map(ordem) if c.name == "Ambiente" else c)
 
-res.drop(columns="col").round(2).to_csv("resumo.csv", index=False)
+res.drop(columns="col").round(2).to_csv("resultados/resumo.csv", index=False)
 
 print("\n=== Média ± DP e overhead face ao Baseline (por PC) ===")
 for no, g in res.groupby("Node_ID"):
@@ -47,7 +47,7 @@ for no, g in res.groupby("Node_ID"):
 print("\n=== Comparação entre PCs (média) ===")
 print(res.pivot_table(index=["Metrica", "Ambiente"], columns="Node_ID", values="Media").round(2))
 
-with open("tabela_resultados.tex", "w", encoding="utf-8") as f:
+with open("resultados/tabela_resultados.tex", "w", encoding="utf-8") as f:
     f.write("\\begin{table}[htbp]\n\\centering\n\\caption{Resultados dos benchmarks (média $\\pm$ desvio padrão) e overhead face ao baseline.}\n")
     f.write("\\label{tab:resultados}\n\\begin{tabular}{llllr}\n\\toprule\n")
     f.write("PC & Ambiente & Métrica & Valor & Overhead (\\%) \\\\\n\\midrule\n")
