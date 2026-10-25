@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""Benchmark unificado (CPU, RAM, disco, rede) para comparar
-Baseline, Hypervisor Tipo 1 e Hypervisor Tipo 2.
-Usar EXATAMENTE este script em todos os ambientes e em ambos os PCs."""
 import csv
 import json
 import os
